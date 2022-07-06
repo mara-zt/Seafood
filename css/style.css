@@ -1,0 +1,130 @@
+*,*::after,*::before{box-sizing: border-box;}
+a {text-decoration: none; color: inherit;}
+body {
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #232222
+   }
+.container {max-width: 1220px; padding: 0 10px; margin: 0 auto;}
+
+
+.header__top {display: flex; justify-content: space-between; padding-top: 20px;}
+.logo {margin-left: 16px;}
+.menu__list {display: flex;}
+.phone {margin-top: 11px; margin-right: 43px;}
+.menu {margin-top: 16px;}
+.menu__item + .menu__item {margin-left: 30px;}
+.menu__link {
+    text-transform: uppercase; 
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px; 
+    color: #001E64;}
+.menu__link:hover {border-bottom: 1px solid #001E64;}
+.header__content {background-image: url(../images/header-bg.png); background-size: cover; background-position: top; background-repeat: no-repeat;
+padding-bottom: 36px; margin-top: -100px;
+min-height: calc(100vh - 100px);}
+.title {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 95px;
+    color: #001E64;
+    max-width: 589px;
+    padding-top: 170px;
+    padding-left: 112px;
+    margin-bottom: 60px;}
+.header--slider {
+    max-width: 522px; 
+    padding-left: 112px; 
+    padding-top: 57px; 
+    padding-bottom: 135px;}
+.header--slider__text {
+    margin-bottom: 25px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;}
+.slick-prev, .slick-next {background-color: transparent;
+border: none; cursor: pointer; padding: 0; position: absolute; left: 40px;} 
+.slick-prev {top: 0;}
+.slick-next {bottom: 0;}
+.slick-dots {list-style: none;
+    position: absolute; left: 35px;
+    top: 58px;
+    bottom: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  }
+.slick-dots button { border: none; background-color: transparent; padding: 0;
+    color: #FFFFFF;
+    font-size: 24px;
+    line-height: 28px;
+    opacity: 0.5;
+    cursor: pointer;}
+.slick-active button {opacity: 1;}
+.slick-dots button::before {content: '0';}
+.slick-dots li:nth-child(n+10) button::before {content: '';}
+.header__content--btn {font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    padding: 14px 88px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, .5);
+    margin-left: 112px;
+    display: inline-block;
+    transform: translateY(-100px);
+    position: absolute;}
+.header__content--box {display: flex; margin-left: 100%; margin-right: 30px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;}
+.header__content--link--activ {font-weight: 700;}
+
+.product {padding-top: 100px;}
+.product__inner {display: flex; justify-content: space-between;}
+.product__name {width: 510px; text-align: center; padding-top: 41px;}
+.product__name-item + .product__name-item {margin-top: 30px;}
+.product__contect {width: 600px;}
+.product-prev {position: absolute; top: 0; left: 0; right: 0;}
+.product-prev, .product-next {border: none;
+background-color: transparent; padding: 0;} 
+.product__name-item {
+    font-family: 'Roboto Slab', serif;    
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400;
+    cursor: pointer;}
+.product__name-item.slick-current {font-weight: 700;
+    font-size: 36px;
+    color: #001E64;}
+.product__content-box {display: flex; justify-content: space-between;}
+.product__content-img {object-fit: cover;}
+.product__contenr-list {width: 291px; list-style: none;}
+.product__content-item {font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 30px;}
+.product__content-item span {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #001E64;}
+.product__content-title {font-weight: 400; font-size: 24px; line-height: 24px; color: #001E64; margin-bottom: 20px; padding-top: 20px;}
+.product__content-text {margin-bottom: 25px;}
+.product__content-btn {display: inline-block; color: #001E64; 
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    padding: 12px 85px;
+    background-color: transparent;
+    border: 1px solid #001E64;
+    border-radius: 20px;
+    cursor: pointer;}
